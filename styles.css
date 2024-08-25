@@ -1,0 +1,41 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #4a6751;
+    color: white;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+main {
+    flex: 1;
+    padding-top: 70px; /* Space for header */
+    padding-bottom: 60px; /* Space for footer */
+    overflow-y: auto;
+}
+
+.content {
+    max-width: 800px;
+    margin: auto;
+}
